@@ -5,12 +5,14 @@
   <title>Redirecting...</title>
   <script>
     // 使用 JavaScript 立即導向
-    window.location.href = "https://www.smolens.co/service.html";
+    window.location.replace("https://www.smolens.co/service.html");
   </script>
 </head>
 <body>
-  <p>Redirecting... 
-     <a href="https://www.smolens.co/service.html"></a>.
-  </p>
+  <!-- 隱藏的備用連結，避免使用者看到 -->
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=https://www.smolens.co/service.html">
+    <a href="https://www.smolens.co/service.html" style="display:none;">Backup link</a>
+  </noscript>
 </body>
 </html>
